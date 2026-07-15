@@ -1,0 +1,9 @@
+/* تطبيق الخط على جميع عناصر المشروع */
+* {
+  font-family: 'Cairo', sans-serif !important;
+}
+
+/* تحسين إضافي اختياري لجعل الأرقام تظهر بشكل إنجليزي مودرن داخل الجداول */
+input, td, th {
+  font-variant-numeric: lining-nums;
+}
