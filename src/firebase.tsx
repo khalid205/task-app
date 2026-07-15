@@ -1,6 +1,5 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 // 1. ➕ استيراد دالة الفايرستور للتعامل مع قاعدة البيانات
 import { getFirestore } from "firebase/firestore"; 
 
@@ -17,7 +16,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+
 
 // 2. 🚀 تشغيل وتصدير قاعدة البيانات باسم db ليتعرف عليها الفورم فوراً
 export const db = getFirestore(app);

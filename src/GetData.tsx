@@ -14,7 +14,8 @@ interface UserTask {
 
 const GetData: React.FC = () => {
   const [tasks, setTasks] = useState<UserTask[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
+const [, setLoading] = useState<boolean>(true); // استخدام الفاصلة يعني أننا تجاهلنا المتغير الأول
+// أو إذا كنت لا تستخدم setLoading أيضاً، احذف السطر كاملاً.
   
   // 🔔 حالة لتخزين معرفات المهام التي حان وقت تنبيهها حالياً لملء اللون والايرباك
   const [activeAlarms, setActiveAlarms] = useState<string[]>([]);

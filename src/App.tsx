@@ -1,22 +1,17 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom'; // استيراد HashRouter
 import Navbar from './Navbar';
 import GetData from './GetData';
 
 const App: React.FC = () => {
   return (
-    <BrowserRouter>
-      {/* الـ Navbar يظهر دائماً في كل الصفحات */}
+    <HashRouter> {/* استخدم HashRouter بدلاً من BrowserRouter */}
       <Navbar /> 
-      
-      {/* التنقل بين الصفحات بناءً على الرابط */}
       <Routes>
-        {/* ✅ تصحيح مسار الـ Route ليعرض المكون مباشرة */}
-        <Route path="/" element={<GetData />} /> {/* قمنا بوضع GetData هنا لتعمل كصفحة رئيسية أيضاً عند فتح الموقع */}
+        <Route path="/" element={<GetData />} />
         <Route path="/getdata" element={<GetData />} />
         <Route path="*" element={<div className="text-center my-5">الصفحة غير موجودة 404</div>} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
