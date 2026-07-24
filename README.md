@@ -28,3 +28,6 @@ Tasks-Project-App هو تطبيق ويب تفاعلي مصمم لمساعدتك 
   /context        # إدارة بيانات المهام (TaskContext)
   /hooks          # دوال التنبيهات وإدارة الوقت
   /assets         # الأيقونات والصور
+
+رابط الموقع
+khalid205.github.io/task-app/
